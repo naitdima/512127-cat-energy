@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Метельков](https://up.htmlacademy.ru/adaptive/14/user/512127).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Позднякова](https://up.htmlacademy.ru/adaptive/14/user/5608).
 
 ---
 
