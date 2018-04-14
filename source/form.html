@@ -29,6 +29,48 @@
 
 <main class="page-content">
   <h1 class="visually-hidden">Подбор программы функционального питания для котов «Кэт энерджи»</h1>
+  <form class="form-program" action="https://echo.htmlacademy.ru">
+    <h2 class="form-program__title">Подбор программы</h2>
+    <div class="form-program__wrap">
+      <p class="form-program__descr">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <label class="form-program__label" for="name">Имя:*</label>
+      <input class="form-program__input" id="name" type="text">
+      <label class="form-program__label" for="weight">Вес (кг):*</label>
+      <input id="weight" type="text">
+      <label class="form-program__label" for="age">Возраст (лет):</label>
+      <input id="age" type="text">
+    </div>
+    <div class="form-program__wrap">
+      <input class="visually-hidden" id="slim" type="radio" name="program" value="slim" checked>
+      <label for="slim">Похудение</label>
+      <input class="visually-hidden" id="pro" type="radio" name="program" value="pro">
+      <label for="pro">Набор массы</label>
+      <input class="visually-hidden" id="unknown" type="radio" name="program" value="unknown">
+      <label for="unknown">Не знаю (Нужен ваш совет)</label>
+    </div>
+    <h3 class="form-program__wrap-title">Контактные данные (владельца кота)</h3>
+    <label class="form-program__label" for="email">E-mail:*</label>
+    <input class="form-program__input" id="email" type="email">
+    <label class="form-program__label" for="tel">Телефон:*</label>
+    <input id="tel" type="tel">
+
+    <h3 class="form-program__wrap-title">Комментарий</h3>
+    <textarea class="form-program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+
+    <h3 class="form-program__wrap-title">Дополнительно</h3>
+    <input class="visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
+    <label for="sweetener">Сахарозаменитель</label>
+    <input class="visually-hidden" id="water" type="checkbox" name="water">
+    <label for="water">Питьевая вода</label>
+    <input class="visually-hidden" id="milk" type="checkbox" name="milk">
+    <label for="milk">Молоко</label>
+    <input class="visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+    <label for="vitamins">Витамины</label>
+
+    <button class="btn form-program__btn" type="submit">Отправить заявку</button>
+    <p class="form-program__note">* — Обязательные поля</p>
+  </form>
+
   <section class="contacts">
     <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
     <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
