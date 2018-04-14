@@ -5,8 +5,26 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <div class="page-header__wrap">
+        <div class="page-header__logo">
+          <img class="logo-img  page-header__logo-img" src="#" alt="Cat" width="33" height="38">
+          <img class="logo-text  page-header__logo-text" src="#" alt="Cat Energy" width="101" height="18">
+        </div>
+        <button class="hamburger-btn  hamburger-btn--active">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <button class="close-btn">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      </div>
+      <nav class="page-header__nav visually-hidden">
+        <ul class="page-header__nav-list">
+          <li class="page-header__nav-item"><a>Главная</a></li>
+          <li class="page-header__nav-item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="page-header__nav-item"><a href="form.html">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>
