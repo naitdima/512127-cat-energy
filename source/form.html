@@ -1,109 +1,109 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи - Подбор программы</title>
-</head>
-<body>
-<header class="page-header">
-  <div class="page-header__wrap">
-    <div class="page-header__logo">
-      <img class="logo-img  page-header__logo-img" src="#" alt="Cat" width="33" height="38">
-      <img class="logo-text  page-header__logo-text" src="#" alt="Cat Energy" width="101" height="18">
-    </div>
-    <button class="hamburger-btn  hamburger-btn--active">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <button class="close-btn">
-      <span class="visually-hidden">Закрыть меню</span>
-    </button>
-  </div>
-  <nav class="page-header__nav visually-hidden">
-    <ul class="page-header__nav-list">
-      <li class="page-header__nav-item"><a href="index.html">Главная</a></li>
-      <li class="page-header__nav-item"><a href="catalog.html">Каталог продукции</a></li>
-      <li class="page-header__nav-item"><a>Подбор программы</a></li>
-    </ul>
-  </nav>
-</header>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи - Подбор программы</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrap">
+        <a class="page-header__logo" href="index.html">
+          <img class="logo-img  page-header__logo-img" src="#" alt="Cat" width="33" height="38">
+          <img class="logo-text  page-header__logo-text" src="#" alt="Cat Energy" width="101" height="18">
+        </a>
+        <button class="hamburger-btn  hamburger-btn--active">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <button class="close-btn">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      </div>
+      <nav class="page-header__nav visually-hidden">
+        <ul class="page-header__nav-list">
+          <li class="page-header__nav-item"><a href="index.html">Главная</a></li>
+          <li class="page-header__nav-item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="page-header__nav-item"><a>Подбор программы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<main class="page-content">
-  <h1 class="visually-hidden">Подбор программы функционального питания для котов «Кэт энерджи»</h1>
-  <form class="form-program" action="https://echo.htmlacademy.ru">
-    <h2 class="form-program__title">Подбор программы</h2>
-    <div class="form-program__wrap">
-      <p class="form-program__descr">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <label class="form-program__label" for="name">Имя:*</label>
-      <input class="form-program__input" id="name" type="text">
-      <label class="form-program__label" for="weight">Вес (кг):*</label>
-      <input id="weight" type="text">
-      <label class="form-program__label" for="age">Возраст (лет):</label>
-      <input id="age" type="text">
-    </div>
-    <div class="form-program__wrap">
-      <input class="visually-hidden" id="slim" type="radio" name="program" value="slim" checked>
-      <label for="slim">Похудение</label>
-      <input class="visually-hidden" id="pro" type="radio" name="program" value="pro">
-      <label for="pro">Набор массы</label>
-      <input class="visually-hidden" id="unknown" type="radio" name="program" value="unknown">
-      <label for="unknown">Не знаю (Нужен ваш совет)</label>
-    </div>
-    <h3 class="form-program__wrap-title">Контактные данные (владельца кота)</h3>
-    <label class="form-program__label" for="email">E-mail:*</label>
-    <input class="form-program__input" id="email" type="email">
-    <label class="form-program__label" for="tel">Телефон:*</label>
-    <input id="tel" type="tel">
+    <main class="page-content">
+      <h1 class="visually-hidden">Подбор программы функционального питания для котов «Кэт энерджи»</h1>
+      <form class="form-program" action="https://echo.htmlacademy.ru">
+        <h2 class="form-program__title">Подбор программы</h2>
+        <div class="form-program__wrap">
+          <p class="form-program__descr">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <label class="form-program__label" for="name">Имя:*</label>
+          <input class="form-program__input" id="name" type="text">
+          <label class="form-program__label" for="weight">Вес (кг):*</label>
+          <input id="weight" type="text">
+          <label class="form-program__label" for="age">Возраст (лет):</label>
+          <input id="age" type="text">
+        </div>
+        <div class="form-program__wrap">
+          <input class="visually-hidden" id="slim" type="radio" name="program" value="slim" checked>
+          <label for="slim">Похудение</label>
+          <input class="visually-hidden" id="pro" type="radio" name="program" value="pro">
+          <label for="pro">Набор массы</label>
+          <input class="visually-hidden" id="unknown" type="radio" name="program" value="unknown">
+          <label for="unknown">Не знаю (Нужен ваш совет)</label>
+        </div>
+        <h3 class="form-program__wrap-title">Контактные данные (владельца кота)</h3>
+        <label class="form-program__label" for="email">E-mail:*</label>
+        <input class="form-program__input" id="email" type="email">
+        <label class="form-program__label" for="tel">Телефон:*</label>
+        <input id="tel" type="tel">
 
-    <h3 class="form-program__wrap-title">Комментарий</h3>
-    <textarea class="form-program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <h3 class="form-program__wrap-title">Комментарий</h3>
+        <textarea class="form-program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
 
-    <h3 class="form-program__wrap-title">Дополнительно</h3>
-    <input class="visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
-    <label for="sweetener">Сахарозаменитель</label>
-    <input class="visually-hidden" id="water" type="checkbox" name="water">
-    <label for="water">Питьевая вода</label>
-    <input class="visually-hidden" id="milk" type="checkbox" name="milk">
-    <label for="milk">Молоко</label>
-    <input class="visually-hidden" id="vitamins" type="checkbox" name="vitamins">
-    <label for="vitamins">Витамины</label>
+        <h3 class="form-program__wrap-title">Дополнительно</h3>
+        <input class="visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
+        <label for="sweetener">Сахарозаменитель</label>
+        <input class="visually-hidden" id="water" type="checkbox" name="water">
+        <label for="water">Питьевая вода</label>
+        <input class="visually-hidden" id="milk" type="checkbox" name="milk">
+        <label for="milk">Молоко</label>
+        <input class="visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+        <label for="vitamins">Витамины</label>
 
-    <button class="btn form-program__btn" type="submit">Отправить заявку</button>
-    <p class="form-program__note">* — Обязательные поля</p>
-  </form>
+        <button class="btn form-program__btn" type="submit">Отправить заявку</button>
+        <p class="form-program__note">* — Обязательные поля</p>
+      </form>
 
-  <section class="contacts">
-    <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-    <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-  </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </section>
 
-  <section class="map">
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1NiERkeAQxdjzrdMQ0gcSNCqIagpv5r_j" width="360" height="362"></iframe>
-  </section>
-</main>
+      <section class="map">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1NiERkeAQxdjzrdMQ0gcSNCqIagpv5r_j" width="360" height="362"></iframe>
+      </section>
+    </main>
 
-<footer class="page-footer">
-  <section class="page-footer__logo">
-    <a href="index.html"><img class="logo-text" src="#" alt="Cat Energy" width="128" height="24"></a>
-  </section>
-  <section class="page-footer__social">
-    <ul class="page-footer__social-list">
-      <li class="page-footer__social-item  page-footer__social-item--vk">
-        <span class="visually-hidden">VK</span>
-      </li>
-      <li class="page-footer__social-item  page-footer__social-item--inst">
-        <span class="visually-hidden">Instagram</span>
-      </li>
-      <li class="page-footer__social-item  page-footer__social-item--fb">
-        <span class="visually-hidden">Facebook</span>
-      </li>
-    </ul>
-  </section>
-  <section class="page-footer__copyright">
-    <a class="page-footer__copyright-descr-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    <a href="page-footer__copyright-logo-link">
-      <img class="page-footer__copyright-logo" src="#" alt="HTML Academy logo" width="27" height="34">
-    </a>
-  </section>
-</footer>
-</body>
+    <footer class="page-footer">
+      <section class="page-footer__logo">
+        <a href="index.html"><img class="logo-text" src="#" alt="Cat Energy" width="128" height="24"></a>
+      </section>
+      <section class="page-footer__social">
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item  page-footer__social-item--vk">
+            <span class="visually-hidden">VK</span>
+          </li>
+          <li class="page-footer__social-item  page-footer__social-item--inst">
+            <span class="visually-hidden">Instagram</span>
+          </li>
+          <li class="page-footer__social-item  page-footer__social-item--fb">
+            <span class="visually-hidden">Facebook</span>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__copyright">
+        <a class="page-footer__copyright-descr-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a href="page-footer__copyright-logo-link">
+          <img class="page-footer__copyright-logo" src="#" alt="HTML Academy logo" width="27" height="34">
+        </a>
+      </section>
+    </footer>
+  </body>
 </html>
