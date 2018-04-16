@@ -29,55 +29,178 @@
 
 <main class="page-content">
   <h1 class="visually-hidden">Каталог продукции «Кэт энерджи»</h1>
-  <form class="form-program" action="https://echo.htmlacademy.ru">
-    <h2 class="form-program__title">Подбор программы</h2>
-    <div class="form-program__wrap">
-      <p class="form-program__descr">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <label class="form-program__label" for="name">Имя:*</label>
-      <input class="form-program__input" id="name" type="text">
-      <label class="form-program__label" for="weight">Вес (кг):*</label>
-      <input id="weight" type="text">
-      <label class="form-program__label" for="age">Возраст (лет):</label>
-      <input id="age" type="text">
-    </div>
-    <div class="form-program__wrap">
-      <input class="visually-hidden" id="slim" type="radio" name="program" value="slim" checked>
-      <label for="slim">Похудение</label>
-      <input class="visually-hidden" id="pro" type="radio" name="program" value="pro">
-      <label for="pro">Набор массы</label>
-      <input class="visually-hidden" id="unknown" type="radio" name="program" value="unknown">
-      <label for="unknown">Не знаю (Нужен ваш совет)</label>
-    </div>
-    <h3 class="form-program__wrap-title">Контактные данные (владельца кота)</h3>
-    <label class="form-program__label" for="email">E-mail:*</label>
-    <input class="form-program__input" id="email" type="email">
-    <label class="form-program__label" for="tel">Телефон:*</label>
-    <input id="tel" type="tel">
-
-    <h3 class="form-program__wrap-title">Комментарий</h3>
-    <textarea class="form-program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-
-    <h3 class="form-program__wrap-title">Дополнительно</h3>
-    <input class="visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
-    <label for="sweetener">Сахарозаменитель</label>
-    <input class="visually-hidden" id="water" type="checkbox" name="water">
-    <label for="water">Питьевая вода</label>
-    <input class="visually-hidden" id="milk" type="checkbox" name="milk">
-    <label for="milk">Молоко</label>
-    <input class="visually-hidden" id="vitamins" type="checkbox" name="vitamins">
-    <label for="vitamins">Витамины</label>
-
-    <button class="btn form-program__btn" type="submit">Отправить заявку</button>
-    <p class="form-program__note">* — Обязательные поля</p>
-  </form>
-
-  <section class="contacts">
-    <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-    <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-  </section>
-
-  <section class="map">
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1NiERkeAQxdjzrdMQ0gcSNCqIagpv5r_j" width="360" height="362"></iframe>
+  <section class="goods">
+    <header class="goods__header">
+      <h2 class="goods__title">Каталог продукции</h2>
+    </header>
+    <section class="goods__list">
+      <article class="goods-item">
+        <div class="goods-item__img-wrap">
+          <img class="goods-item__img" src="#" alt="Cat Energy Курица" width="140" height="144">
+        </div>
+        <div class="goods-item__descr-wrap">
+          <h3 class="goods-item__title">Cat Energy PRO 500 г</h3>
+          <table class="goods-item__table">
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Объем</th>
+              <td class="goods-item__table-column-right">500 г</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Вкус</th>
+              <td class="goods-item__table-column-right">Курица</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Цена</th>
+              <td class="goods-item__table-column-right">700 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods-item__btn" href="#">Заказать</a>
+      </article>
+      <article class="goods-item">
+        <div class="goods-item__img-wrap">
+          <img class="goods-item__img" src="#" alt="Cat Energy Курица" width="140" height="144">
+        </div>
+        <div class="goods-item__descr-wrap">
+          <h3 class="goods-item__title">Cat Energy PRO 500 г</h3>
+          <table class="goods-item__table">
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Объем</th>
+              <td class="goods-item__table-column-right">1000 г</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Вкус</th>
+              <td class="goods-item__table-column-right">Курица</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Цена</th>
+              <td class="goods-item__table-column-right">1000 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods-item__btn" href="#">Заказать</a>
+      </article>
+      <article class="goods-item">
+        <div class="goods-item__img-wrap">
+          <img class="goods-item__img" src="#" alt="Cat Energy Рыба" width="140" height="144">
+        </div>
+        <div class="goods-item__descr-wrap">
+          <h3 class="goods-item__title">Cat Energy PRO 500 г</h3>
+          <table class="goods-item__table">
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Объем</th>
+              <td class="goods-item__table-column-right">500 г</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Вкус</th>
+              <td class="goods-item__table-column-right">Рыба</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Цена</th>
+              <td class="goods-item__table-column-right">700 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods-item__btn" href="#">Заказать</a>
+      </article>
+      <article class="goods-item">
+        <div class="goods-item__img-wrap">
+          <img class="goods-item__img" src="#" alt="Cat Energy Рыба" width="140" height="144">
+        </div>
+        <div class="goods-item__descr-wrap">
+          <h3 class="goods-item__title">Cat Energy PRO 500 г</h3>
+          <table class="goods-item__table">
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Объем</th>
+              <td class="goods-item__table-column-right">1000 г</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Вкус</th>
+              <td class="goods-item__table-column-right">Рыба</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Цена</th>
+              <td class="goods-item__table-column-right">1000 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods-item__btn" href="#">Заказать</a>
+      </article>
+      <article class="goods-item">
+        <div class="goods-item__img-wrap">
+          <img class="goods-item__img" src="#" alt="Cat Energy Гречка" width="140" height="144">
+        </div>
+        <div class="goods-item__descr-wrap">
+          <h3 class="goods-item__title">Cat Energy PRO 500 г</h3>
+          <table class="goods-item__table">
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Объем</th>
+              <td class="goods-item__table-column-right">500 г</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Вкус</th>
+              <td class="goods-item__table-column-right">Гречка</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Цена</th>
+              <td class="goods-item__table-column-right">400 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods-item__btn" href="#">Заказать</a>
+      </article>
+      <article class="goods-item">
+        <div class="goods-item__img-wrap">
+          <img class="goods-item__img" src="#" alt="Cat Energy Гречка" width="140" height="144">
+        </div>
+        <div class="goods-item__descr-wrap">
+          <h3 class="goods-item__title">Cat Energy PRO 500 г</h3>
+          <table class="goods-item__table">
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Объем</th>
+              <td class="goods-item__table-column-right">1000 г</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Вкус</th>
+              <td class="goods-item__table-column-right">Гречка</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Цена</th>
+              <td class="goods-item__table-column-right">700 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods-item__btn" href="#">Заказать</a>
+      </article>
+      <article class="goods-item">
+        <div class="goods-item__img-wrap">
+          <img class="goods-item__img" src="#" alt="Cat Energy Рис" width="140" height="144">
+        </div>
+        <div class="goods-item__descr-wrap">
+          <h3 class="goods-item__title">Cat Energy PRO 500 г</h3>
+          <table class="goods-item__table">
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Объем</th>
+              <td class="goods-item__table-column-right">500 г</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Вкус</th>
+              <td class="goods-item__table-column-right">Рис</td>
+            </tr>
+            <tr class="goods-item__table-row">
+              <th class="goods-item__table-column-left">Цена</th>
+              <td class="goods-item__table-column-right">500 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <a class="goods-item__btn" href="#">Заказать</a>
+      </article>
+      <div class="goods__list-show">
+        <h3 class="goods__list-show-title">Показать еще 100500 товаров</h3>
+        <p class="goods__list-show-descr">На самом деле вкусов гораздо больше!</p>
+        <button class="goods__list-show-btn">Показать все</button>
+      </div>
+    </section>
   </section>
 </main>
 
