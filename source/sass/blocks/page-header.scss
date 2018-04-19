@@ -29,6 +29,18 @@
   @include list-reset;
 }
 
+.page-header__nav-item {
+  border-bottom: 1px solid #e6e6e6;
+}
 
+.page-header__nav-link {
+  display: block;
+  padding: 23px 0;
 
-
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-secondary-font;
+  text-transform: uppercase;
+}

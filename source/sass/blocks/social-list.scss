@@ -1,0 +1,8 @@
+.social-list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
