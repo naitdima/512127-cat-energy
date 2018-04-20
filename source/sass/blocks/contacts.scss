@@ -5,6 +5,15 @@
   padding-bottom: 30px;
 }
 
+.catalog .contacts {
+  background-color: $color-secondary;
+}
+
+.contacts__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .contacts__title {
   width: 140px;
   margin: 0;
