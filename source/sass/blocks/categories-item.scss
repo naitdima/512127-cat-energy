@@ -1,9 +1,9 @@
 .categories-item {
+  margin-bottom: 20px;
   padding: 20px;
   padding-bottom: 0;
 
   background-color: $color-secondary;
-  margin-bottom: 20px;
 }
 
 .categories-item__title {
@@ -81,6 +81,7 @@
   line-height: 16px;
   color: $color-secondary-font;
   text-transform: uppercase;
+
   border-top: 1px solid rgba(0,0,0,0.1);
 }
 
@@ -89,23 +90,13 @@
 }
 
 .categories-item__link-descr::before {
+  content: "";
   position: absolute;
-  content: '';
   top: 6px;
   right: -38px;
-  width: 7px;
-  height: 11px;
-  border: 7px solid transparent;
-  border-top: 7px solid #3e4242;
-  transform: rotate(-90deg);
-}
 
-.categories-item__link-descr::after {
-  position: absolute;
-  content: '';
-  top: 11px;
-  right: -24px;
-  width: 17px;
-  height: 4px;
-  background-color: #3e4242;
+  width: 24px;
+  height: 11px;
+
+  background-image: url(../../img/icon-right-arrow-long.svg);
 }
