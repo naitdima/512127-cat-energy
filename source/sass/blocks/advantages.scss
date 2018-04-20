@@ -4,11 +4,12 @@
 
 .advantages__title {
   margin: 0;
+  margin-bottom: 23px;
+
+  font-weight: 400;
   font-size: 36px;
   line-height: 60px;
-  font-weight: 400;
   color: $color-secondary-font;
-  margin-bottom: 23px;
 }
 
 .advantages__list {
@@ -16,37 +17,43 @@
 }
 
 .advantages__item {
+  position: relative;
+
   margin-bottom: 20px;
   padding-left: 80px;
-  position: relative;
 }
 
 .advantages__item-descr {
+  padding-top: 4px;
+
   font-size: 14px;
   line-height: 18px;
   font-family: $font-secondary;
-  padding-top: 4px;
 }
 
 .advantages__item::before {
+  content: "";
   position: absolute;
-  content: '';
-  background-color: $color-interactive;
-  width: 60px;
-  height: 60px;
   top: 0;
   left: 0;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $color-interactive;
 }
 
 .advantages__item::after {
+  content: "";
   position: absolute;
-  content: '';
-  width: 60px;
-  height: 60px;
-  background-repeat: no-repeat;
-  background-position: center;
   top: 0;
   left: 0;
+
+  width: 60px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advantages__item--leaf::after {
@@ -64,4 +71,3 @@
 .advantages__item--clock::after {
   background-image: url(../../img/advantage-clock@1x.png);
 }
-
