@@ -1,0 +1,36 @@
+.hamburger-btn {
+  position: absolute;
+  top: 19px;
+  right: 3px;
+
+  width: 18px;
+  height: 18px;
+
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 2px;
+    height: 24px;
+
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 2px;
+    height: 24px;
+
+    background-color: #000000;
+    transform: rotate(-45deg);
+  }
+}
