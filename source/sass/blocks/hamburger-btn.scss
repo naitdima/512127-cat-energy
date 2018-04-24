@@ -1,36 +1,25 @@
 .hamburger-btn {
   position: absolute;
-  top: 19px;
-  right: 3px;
+  right: 0;
 
-  width: 18px;
-  height: 18px;
-
+  background-repeat: no-repeat;
   border: none;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+  &--show {
+    top: 23px;
 
-    width: 2px;
-    height: 24px;
+    width: 24px;
+    height: 18px;
 
-    background-color: #000000;
-    transform: rotate(45deg);
+    background-image: url("../img/icon-mobile-menu.svg");
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+  &--close {
+    top: 19px;
 
-    width: 2px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
 
-    background-color: #000000;
-    transform: rotate(-45deg);
+    background-image: url("../img/icon-close.svg");
   }
 }

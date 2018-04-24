@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 8px;
+  padding-top: 5px;
 
   background-color: $color-secondary;
 }
@@ -7,10 +7,20 @@
 .page-footer__logo-wrap {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 34px;
+  padding-bottom: 28px;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page-footer__logo-link {
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__logo {
@@ -26,7 +36,7 @@
 }
 
 .page-footer__copyright {
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 20px;
 }
 
@@ -36,6 +46,15 @@
   justify-content: space-between;
 
   color: $color-main-font;
+
+  &:hover .page-footer__copyright-link-icon-content,
+  &:active .page-footer__copyright-link-icon-content {
+    fill: $color-interactive;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copyright-descr {

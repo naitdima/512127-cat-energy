@@ -49,4 +49,13 @@
   color: $color-main-font;
 
   background-color: $color-secondary;
+
+  &:hover,
+  &:active {
+    background-color: $color-secondary--dark;
+  }
+
+  &:active {
+    color: $color-main-font--lighten;
+  }
 }

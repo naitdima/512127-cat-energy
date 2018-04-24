@@ -1,13 +1,13 @@
 .result {
-  padding-top: 20px;
-  padding-bottom: 37px;
+  padding-top: 17px;
+  padding-bottom: 36px;
 
   background-color: $color-secondary;
 }
 
 .result__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   font-weight: 400;
   font-size: 36px;
@@ -26,10 +26,10 @@
 }
 
 .result__list {
+  @include list-reset;
+
   display: flex;
   justify-content: space-between;
-
-  @include list-reset;
 }
 
 .result__item {
@@ -39,9 +39,9 @@
   justify-content: center;
   align-items: center;
   width: 124px;
-  margin-bottom: 35px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-bottom: 34px;
+  padding-top: 13px;
+  padding-bottom: 17px;
 
   border: 1px solid #cfcfcf;
   border-radius: 3px;
@@ -59,7 +59,7 @@
 
 .result__item-category {
   position: absolute;
-  top: 47px;
+  top: 46px;
 
   width: 87px;
   margin: 0;
@@ -73,9 +73,15 @@
   background-color: $color-secondary;
 }
 
+.result__diff-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .result__diff-title {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
 
   font-weight: 400;
   font-size: 14px;
@@ -88,12 +94,25 @@
 .result__diff-img {
   width: 320px;
   height: 240px;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 }
 
 .result__diff-range-wrap {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 202px;
+  padding-left: 5px;
+}
+
+.result__diff-range-label {
+  margin-top: 3px;
+  display: block;
+  width: 84px;
+  height: 14px;
+  background-color: $color-main;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
 }
 
 .result__diff-range-descr {
@@ -103,12 +122,4 @@
   line-height: 20px;
   color: $color-secondary-font;
   text-transform: uppercase;
-}
-
-.result__diff-range-descr--before {
-  margin-right: 20px;
-}
-
-.result__diff-range-descr--after {
-  margin-left: 20px;
 }
