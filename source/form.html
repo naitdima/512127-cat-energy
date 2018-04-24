@@ -36,46 +36,49 @@
     </header>
 
     <main class="page-content">
-      <h1 class="visually-hidden">Подбор программы функционального питания для котов «Кэт энерджи»</h1>
       <form class="form-program" action="https://echo.htmlacademy.ru">
         <div class="container">
-          <h2 class="form-program__title">Подбор программы</h2>
+          <h1 class="form-program__title">Подбор программы</h1>
         </div>
 
-        <div class="container  form-program__wrap">
-          <p class="form-program__descr">Заполните анкету и мы подберем программу питания для вашего кота</p>
-          <div class="form-program__input-wrap">
-            <label class="form-program__label" for="name">Имя:*</label>
-            <input class="form-program__input" id="name" type="text" placeholder="Барсик">
-          </div>
-          <div class="form-program__input-wrap">
-            <label class="form-program__label" for="weight">Вес (кг):*</label>
-            <input class="form-program__input" id="weight" type="text" placeholder="7">
-          </div>
-          <div class="form-program__input-wrap">
-            <label class="form-program__label" for="age">Возраст (лет):</label>
-            <input class="form-program__input" id="age" type="text" placeholder="7">
+        <div class="form-program__wrap">
+          <div class="container">
+            <p class="form-program__descr">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            <div class="form-program__input-wrap">
+              <label class="form-program__label" for="name">Имя:*</label>
+              <input class="form-program__input" id="name" type="text" placeholder="Барсик">
+            </div>
+            <div class="form-program__input-wrap">
+              <label class="form-program__label" for="weight">Вес (кг):*</label>
+              <input class="form-program__input" id="weight" type="text" placeholder="7">
+            </div>
+            <div class="form-program__input-wrap">
+              <label class="form-program__label" for="age">Возраст (лет):</label>
+              <input class="form-program__input" id="age" type="text" placeholder="7">
+            </div>
           </div>
         </div>
 
-        <div class="container  form-program__wrap">
-          <div class="form-program__input-wrap">
-            <input class="visually-hidden  form-program__input" id="slim" type="radio" name="program" value="slim" checked>
-            <label class="form-program__label  form-program__label--radio" for="slim">Похудение</label>
-          </div>
-          <div class="form-program__input-wrap">
-            <input class="visually-hidden  form-program__input" id="pro" type="radio" name="program" value="pro">
-            <label class="form-program__label  form-program__label--radio" for="pro">Набор массы</label>
-          </div>
-          <div class="form-program__input-wrap">
-            <input class="visually-hidden  form-program__input" id="unknown" type="radio" name="program" value="unknown">
-            <label class="form-program__label  form-program__label--radio" for="unknown">Не знаю (Нужен ваш совет)</label>
+        <div class="form-program__wrap">
+          <div class="container">
+            <div class="form-program__input-wrap">
+              <input class="visually-hidden  form-program__input" id="slim" type="radio" name="program" value="slim" checked>
+              <label class="form-program__label  form-program__label--radio" for="slim">Похудение</label>
+            </div>
+            <div class="form-program__input-wrap">
+              <input class="visually-hidden  form-program__input" id="pro" type="radio" name="program" value="pro">
+              <label class="form-program__label  form-program__label--radio" for="pro">Набор массы</label>
+            </div>
+            <div class="form-program__input-wrap">
+              <input class="visually-hidden  form-program__input" id="unknown" type="radio" name="program" value="unknown">
+              <label class="form-program__label  form-program__label--radio" for="unknown">Не знаю (Нужен ваш совет)</label>
+            </div>
           </div>
         </div>
 
         <div class="container">
           <div class="form-program__wrap  form-program__wrap--nb">
-            <h3 class="form-program__wrap-title">Контактные данные (владельца кота)</h3>
+            <h2 class="form-program__wrap-title">Контактные данные (владельца кота)</h2>
             <div class="form-program__input-wrap">
               <label class="form-program__label" for="email">E-mail:*</label>
               <input class="form-program__input" id="email" type="email" placeholder="kuklachev@gmail.com">
@@ -87,12 +90,12 @@
           </div>
 
           <div class="form-program__wrap  form-program__wrap--nb">
-            <h3 class="form-program__wrap-title">Комментарий</h3>
+            <h2 class="form-program__wrap-title">Комментарий</h2>
             <textarea class="form-program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
 
           <div class="form-program__wrap  form-program__wrap--nb">
-            <h3 class="form-program__wrap-title">Дополнительно</h3>
+            <h2 class="form-program__wrap-title">Дополнительно</h2>
             <div class="form-program__input-wrap">
               <input class="visually-hidden  form-program__input" id="sweetener" type="checkbox" name="sweetener" checked>
               <label class="form-program__label  form-program__label--checkbox" for="sweetener">Сахарозаменитель</label>
@@ -123,7 +126,7 @@
       </section>
 
       <section class="map">
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1NiERkeAQxdjzrdMQ0gcSNCqIagpv5r_j" width="360" height="362"></iframe>
+        <iframe class="map__iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1NiERkeAQxdjzrdMQ0gcSNCqIagpv5r_j" width="100%" height="362"></iframe>
       </section>
     </main>
 
