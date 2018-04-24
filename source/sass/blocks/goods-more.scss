@@ -1,0 +1,29 @@
+.goods-more {
+  margin-bottom: 40px;
+  padding-top: 28px;
+}
+
+.goods-more__title {
+  position: relative;
+
+  width: 240px;
+  margin: 0;
+  margin-bottom: 34px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-main-font;
+}
+
+.goods-more__title::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 246px;
+
+  width: 100%;
+  height: 3px;
+
+  background-color: $color-interactive;
+}
