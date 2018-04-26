@@ -23,3 +23,9 @@
     background-image: url("../img/icon-close.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .hamburger-btn {
+    display: none;
+  }
+}
