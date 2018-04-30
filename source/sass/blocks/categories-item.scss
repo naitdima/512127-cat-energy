@@ -30,6 +30,7 @@
     position: absolute;
 
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &--slim::after {
@@ -91,6 +92,8 @@
 
   &:hover .categories-item__link-descr::before,
   &:active .categories-item__link-descr::before {
+    right: -54px;
+
     width: 33px;
 
     background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -115,6 +118,7 @@
   height: 11px;
 
   background-image: url("../img/icon-right-arrow-long.svg");
+  background-size: cover;
 }
 
 @media (min-width: $tablet-width) {

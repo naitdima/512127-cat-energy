@@ -76,9 +76,14 @@
 }
 
 .result__diff-wrap {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.result__diff-img {
+  margin-bottom: 29px;
 }
 
 .result__item-total {
@@ -91,12 +96,6 @@
   text-align: center;
   color: $color-secondary-font;
   text-transform: uppercase;
-}
-
-.result__diff-img {
-  width: 320px;
-  height: 240px;
-  margin-bottom: 32px;
 }
 
 .result__diff-range-wrap {
@@ -229,10 +228,9 @@
 
   .result__diff-img {
     position: absolute;
-    top: -168px;
+    left: 16px;
+    top: -531px;
 
-    width: 545px;
-    height: 517px;
     margin: 0;
   }
 

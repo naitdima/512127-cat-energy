@@ -6,6 +6,7 @@
 .form-program__title {
   margin: 0;
   margin-bottom: 5px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -19,8 +20,9 @@
   border-bottom: 1px solid #ededed;
 
   &--nb {
-    border: none;
     padding-bottom: 1px;
+
+    border: none;
   }
 
   & .form-program__input-wrap:last-child {
@@ -124,6 +126,7 @@
     height: 16px;
 
     background-image: url("../img/icon-tick.svg");
+    background-size: cover;
   }
 }
 
@@ -214,6 +217,7 @@
   margin-bottom: 21px;
   padding-top: 10px;
   padding-bottom: 10px;
+
   font-size: 16px;
   line-height: 20px;
 }

@@ -11,3 +11,19 @@
   line-height: 60px;
   color: $color-secondary-font;
 }
+
+@media (min-width: $tablet-width) {
+  .goods {
+    padding-top: 30px;
+  }
+
+  .goods__header {
+    padding: 0;
+  }
+
+  .goods__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 23px;
+  }
+}

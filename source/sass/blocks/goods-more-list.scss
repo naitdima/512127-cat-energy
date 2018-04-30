@@ -1,3 +1,9 @@
 .goods-more-list {
   border-top: 1px solid #cdcdcd;
 }
+
+@media (min-width: $tablet-width) {
+  .goods-more-list {
+    border: none;
+  }
+}

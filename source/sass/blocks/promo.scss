@@ -13,6 +13,13 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+}
+
+@media (min-resolution: 1.5dppx) {
+  .promo__title-wrap {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .promo__title {
@@ -51,7 +58,9 @@
   .promo {
     min-height: 810px;
     margin: 0;
+    padding-top: 29px;
     padding-left: 117px;
+    margin-bottom: 29px;
   }
 
   .promo__title-wrap {
@@ -86,12 +95,9 @@
   }
 
   .promo__img {
-    top: -30px;
-    left: -14px;
+    top: -28px;
+    left: -88px;
     z-index: -1;
-
-    width: 708px;
-    height: 609px;
 
     transform: none;
   }

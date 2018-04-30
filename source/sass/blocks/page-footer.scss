@@ -23,11 +23,6 @@
   }
 }
 
-.page-footer__logo {
-  width: 128px;
-  height: 24px;
-}
-
 .page-footer__social-wrap {
   display: flex;
   justify-content: center;
@@ -62,13 +57,15 @@
   margin: 0;
   padding-top: 9px;
   padding-bottom: 9px;
+  margin-left: -1px;
 
   font-size: 16px;
   line-height: 16px;
   font-family: $font-secondary;
 }
 
-.page-footer__copyright-logo {
+.page-footer__copyright-link-icon {
+  margin-top: 1px;
   width: 27px;
   height: 34px;
 }
@@ -115,5 +112,9 @@
 
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .page-footer__copyright-link-icon {
+    margin-top: 15px;
   }
 }
