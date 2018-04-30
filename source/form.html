@@ -8,8 +8,8 @@
   </head>
   <body class="form">
     <header class="page-header">
-      <div class="page-header__wrap">
-        <div class="container  page-header__container">
+      <div class="container  page-header__container">
+        <div class="page-header__wrap">
           <a class="page-header__logo">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -21,9 +21,7 @@
             <span class="visually-hidden">Меню</span>
           </button>
         </div>
-      </div>
-      <nav class="page-header__nav">
-        <div class="container">
+        <nav class="page-header__nav visually-hidden">
           <ul class="page-header__nav-list">
             <li class="page-header__nav-item">
               <a class="page-header__nav-link" href="index.html">Главная</a>
@@ -35,8 +33,8 @@
               <a class="page-header__nav-link">Подбор программы</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="page-content">
@@ -45,8 +43,8 @@
           <h1 class="form-program__title">Подбор программы</h1>
         </div>
 
-        <div class="form-program__wrap">
-          <div class="container">
+        <div class="container  form-program__container">
+          <div class="form-program__wrap">
             <p class="form-program__descr">Заполните анкету и мы подберем программу питания для вашего кота</p>
             <div class="form-program__input-wrap">
               <label class="form-program__label" for="name">Имя:*</label>
@@ -61,10 +59,8 @@
               <input class="form-program__input" id="age" type="text" placeholder="7">
             </div>
           </div>
-        </div>
 
-        <div class="form-program__wrap">
-          <div class="container">
+          <div class="form-program__wrap  form-program__wrap--radio">
             <div class="form-program__input-wrap">
               <input class="visually-hidden  form-program__input" id="slim" type="radio" name="program" value="slim" checked>
               <label class="form-program__label  form-program__label--radio" for="slim">Похудение</label>
@@ -78,9 +74,7 @@
               <label class="form-program__label  form-program__label--radio" for="unknown">Не знаю (Нужен ваш совет)</label>
             </div>
           </div>
-        </div>
 
-        <div class="container">
           <div class="form-program__wrap  form-program__wrap--nb">
             <h2 class="form-program__wrap-title">Контактные данные (владельца кота)</h2>
             <div class="form-program__input-wrap">
@@ -98,36 +92,40 @@
             <textarea class="form-program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
 
-          <div class="form-program__wrap  form-program__wrap--nb">
+          <div class="form-program__wrap  form-program__wrap--nb  form-program__wrap--checkbox">
             <h2 class="form-program__wrap-title">Дополнительно</h2>
-            <div class="form-program__input-wrap">
-              <input class="visually-hidden  form-program__input" id="sweetener" type="checkbox" name="sweetener" checked>
-              <label class="form-program__label  form-program__label--checkbox" for="sweetener">Сахарозаменитель</label>
+            <div class="form-program__checkbox-wrap">
+              <div class="form-program__input-wrap  form-program__input-wrap--checkbox">
+                <input class="visually-hidden  form-program__input" id="sweetener" type="checkbox" name="sweetener" checked>
+                <label class="form-program__label  form-program__label--checkbox" for="sweetener">Сахарозаменитель</label>
+              </div>
+              <div class="form-program__input-wrap  form-program__input-wrap--checkbox">
+                <input class="visually-hidden  form-program__input" id="water" type="checkbox" name="water">
+                <label class="form-program__label  form-program__label--checkbox" for="water">Питьевая вода</label>
+              </div>
+              <div class="form-program__input-wrap  form-program__input-wrap--checkbox">
+                <input class="visually-hidden  form-program__input" id="milk" type="checkbox" name="milk">
+                <label class="form-program__label  form-program__label--checkbox" for="milk">Молоко</label>
+              </div>
+              <div class="form-program__input-wrap  form-program__input-wrap--checkbox">
+                <input class="visually-hidden  form-program__input" id="vitamins" type="checkbox" name="vitamins">
+                <label class="form-program__label  form-program__label--checkbox" for="vitamins">Витамины</label>
+              </div>
             </div>
-            <div class="form-program__input-wrap">
-              <input class="visually-hidden  form-program__input" id="water" type="checkbox" name="water">
-              <label class="form-program__label  form-program__label--checkbox" for="water">Питьевая вода</label>
-            </div>
-            <div class="form-program__input-wrap">
-              <input class="visually-hidden  form-program__input" id="milk" type="checkbox" name="milk">
-              <label class="form-program__label  form-program__label--checkbox" for="milk">Молоко</label>
-            </div>
-            <div class="form-program__input-wrap">
-              <input class="visually-hidden  form-program__input" id="vitamins" type="checkbox" name="vitamins">
-              <label class="form-program__label  form-program__label--checkbox" for="vitamins">Витамины</label>
-            </div>
+          </div>
+          <div class="form-program__btn-wrap">
             <button class="btn form-program__btn" type="submit">Отправить заявку</button>
             <p class="form-program__note">* — Обязательные поля</p>
           </div>
         </div>
       </form>
 
-      <section class="contacts">
-        <div class="container  contacts__wrap">
+      <div class="container">
+        <section class="contacts">
           <h2 class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-      </section>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        </section>
+      </div>
 
       <section class="map">
         <iframe class="map__iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1NiERkeAQxdjzrdMQ0gcSNCqIagpv5r_j" width="100%" height="362"></iframe>
@@ -135,7 +133,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container  page-footer__wrap">
         <section class="page-footer__logo-wrap">
           <a class="page-footer__logo-link" href="index.html">
             <img class="page-footer__logo" src="img/logo-footer.svg" alt="Cat Energy" width="128" height="24">
@@ -145,7 +143,7 @@
           <ul class="social-list">
             <li class="social-item">
               <a class="social-item__link  social-item__link--vk" href="#">
-                <svg class="social-item__link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12" width="22" height="12">
+                <svg class="social-item__link-icon  social-item__link-icon--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12" width="22" height="12">
                   <path class="social-item__link-icon-content" fill="#666666" d="M17.6 12c-.3 0-.9-.1-1.5-.5-.5-.3-.9-.7-1.3-1.2-.3-.3-.9-.9-1.1-.9-.2.1-.4.7-.3 1.2 0 .1 0 .6-.3.9-.3.3-.8.4-.9.4h-1.4c-.7 0-3.2-.2-5.4-2.3C2.5 7.1.2 2.2.1 2 0 1.6-.1 1.2.2.9c.3-.3.8-.4 1-.4h3.1c.1 0 .4.1.7.3.3.2.4.5.5.6 0 0 .5 1.1 1.1 2 1 1.5 1.4 1.9 1.5 2 .1-.4.2-1.4.1-2.3 0-.4-.1-.8-.2-1-.1-.1-.3-.2-.5-.2l-.6-.5c0-.5.5-.9.9-1.1.5-.2 1.3-.3 2.3-.3h.5c.9 0 1.2.1 1.6.1 1.2.3 1.2 1.3 1.1 2.5v1.6c0 .3 0 .8.1 1 .2-.1.6-.5 1.5-1.9.6-.9 1-1.9 1.1-2.1.1-.3.4-.7 1.2-.7h3.4c.7 0 1.2.2 1.3.7.2.5.1 1.3-1.7 3.5-.3.3-.5.6-.7.9-.5.4-.9 1-.9 1.1 0 .1.5.5.9.9 1.1.9 1.9 1.7 2.2 2.3.4.6.3 1 .2 1.3-.3.7-1.2.7-1.4.8h-2.8-.1zm-3.9-3.7c.7 0 1.2.6 1.8 1.2.4.4.7.8 1.1 1 .5.3 1 .3 1 .3h2.9c.1 0 .3-.1.4-.1 0 0 0-.1-.1-.1-.3-.5-1-1.3-2-2.1-.9-.7-1.3-1.1-1.4-1.7 0-.6.4-1.1 1.2-2.1.2-.2.4-.5.7-.8 1.1-1.4 1.4-2 1.5-2.3H16.9c0 .4-.5 1.5-1.1 2.4-1.4 2.1-2 2.4-2.5 2.4-.1 0-.3 0-.4-.1-.7-.4-.7-1.4-.7-2.1v-.3-1.3c.1-1.3 0-1.3-.3-1.4-.3-.1-.5-.1-1.4-.1H10c-.5 0-1 0-1.4.1l.2.2c.4.5.4 1.5.4 1.7.1 1.3 0 2.9-.7 3.3-.1 0-.2.1-.4.1-.6 0-1.3-.7-2.5-2.5C5 2.9 4.5 1.8 4.5 1.8s0-.1-.1-.1-.2-.1-.2-.1H1.3h-.1c.4.9 2.5 5 4.8 7.2 2 1.9 4.3 2 4.7 2h1.4s.2 0 .2-.1v-.1c0-.2 0-2 1.2-2.3h.2z"/>
                 </svg>
                 <span class="visually-hidden">VK</span>
@@ -153,7 +151,7 @@
             </li>
             <li class="social-item">
               <a class="social-item__link  social-item__link--inst" href="#">
-                <svg class="social-item__link-icon" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                <svg class="social-item__link-icon  social-item__link-icon--inst" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                   <path class="social-item__link-icon-content" fill="#666666" d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2C2.4 15 1 13.6 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2C1.9 0 0 1.9 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z"/>
                   <path class="social-item__link-icon-content" fill="#666666" d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1 0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z"/>
                   <circle class="social-item__link-icon-content" fill="#666666" cx="12.3" cy="3.7" r=".9"/>
@@ -163,7 +161,7 @@
             </li>
             <li class="social-item">
               <a class="social-item__link  social-item__link--fb" href="#">
-                <svg class="social-item__link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" width="10" height="19">
+                <svg class="social-item__link-icon  social-item__link-icon--fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" width="10" height="19">
                   <path class="social-item__link-icon-content" fill="#666666" d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z"/>
                 </svg>
                 <span class="visually-hidden">Facebook</span>
