@@ -108,3 +108,62 @@
     color: $color-third-font;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 0;
+    padding-top: 54px;
+  }
+
+  .page-header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .page-header__wrap {
+    width: 610px;
+
+    border: none;
+  }
+
+  .page-header__logo {
+    width: 610px;
+    padding: 0;
+  }
+
+  .page-header__logo-img {
+    width: 202px;
+    height: 59px;
+  }
+
+  .page-header__nav {
+    width: 610px;
+    padding: 0;
+    padding-left: 40px;
+  }
+
+  .page-header__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 570px;
+  }
+
+  .page-header__nav-item {
+    margin: 0;
+    margin-left: 34px;
+    border: none;
+  }
+
+  .page-header__nav-link {
+    padding: 0;
+    padding-top: 19px;
+    padding-bottom: 15px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: $color-third-font;
+  }
+}

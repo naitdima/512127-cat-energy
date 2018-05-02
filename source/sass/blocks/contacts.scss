@@ -64,3 +64,41 @@
     padding-top: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: absolute;
+    top: 96px;
+    left: 40px;
+
+    padding: 0;
+
+    background-color: $color-main;
+  }
+
+  .contacts__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 570px;
+    padding: 0;
+    padding-top: 64px;
+    padding-bottom: 54px;
+  }
+
+  .contacts__title {
+    width: 246px;
+    margin: 0;
+    padding: 0;
+    padding-left: 76px;
+  }
+
+  .contacts__adress {
+    width: 245px;
+    margin: 0;
+    padding: 0;
+    padding-right: 85px;
+
+    text-align: left;
+  }
+}

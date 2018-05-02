@@ -3,5 +3,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  margin-bottom: 0;
+  .categories {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

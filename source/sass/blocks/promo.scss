@@ -112,3 +112,63 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    padding-top: 106px;
+    padding-bottom: 268px;
+  }
+
+  .promo__title-wrap {
+    min-height: 0;
+    padding: 0;
+    padding-left: 150px;
+
+    text-align: left;
+
+    background: none;
+  }
+
+  .promo__title {
+    width: 489px;
+    margin: 0;
+    margin-bottom: 41px;
+
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-secondary-font;
+  }
+
+  .promo__slogan {
+    margin-bottom: 53px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-secondary-font;
+  }
+
+  .promo__img-wrap {
+    padding-left: 148px;
+  }
+
+  .promo__img {
+    top: -315px;
+    left: 561px;
+    z-index: -1;
+
+    transform: none;
+  }
+
+  .promo__link {
+    width: 245px;
+    margin-left: 2px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
