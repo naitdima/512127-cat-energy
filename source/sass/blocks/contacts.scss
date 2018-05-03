@@ -1,6 +1,4 @@
 .contacts {
-  display: flex;
-  flex-wrap: wrap;
   padding-top: 28px;
   padding-bottom: 26px;
 }
@@ -38,9 +36,12 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    justify-content: space-between;
     padding: 65px 40px;
     padding-bottom: 55px;
+  }
+
+  .contacts__wrap {
+    justify-content: space-between;
   }
 
   .contacts__title {
