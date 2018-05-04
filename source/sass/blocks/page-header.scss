@@ -73,6 +73,14 @@
   .page-header__logo {
     width: 192px;
     padding: 0;
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
   }
 
   .page-header__logo-img {
@@ -106,6 +114,23 @@
     font-size: 18px;
     line-height: 25px;
     color: $color-third-font;
+
+    &--active {
+      border-bottom: 2px solid #68b738;
+    }
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+  }
+
+  .index .page-header__nav-link {
+    color: $color-main;
+    border-color: $color-main;
   }
 }
 
@@ -188,9 +213,5 @@
     font-size: 20px;
     line-height: 25px;
     color: $color-secondary-font;
-  }
-
-  .index .page-header__nav-link {
-    color: $color-main;
   }
 }
