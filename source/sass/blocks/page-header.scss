@@ -5,7 +5,27 @@
 }
 
 .page-header__wrap {
-  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+    bottom: 0;
+    right: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+    bottom: 0;
+    left: 50%;
+  }
 }
 
 .page-header__container {
@@ -37,7 +57,27 @@
 }
 
 .page-header__nav-item {
-  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+    bottom: 0;
+    right: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+    bottom: 0;
+    left: 50%;
+  }
 }
 
 .page-header__nav-link {
@@ -67,7 +107,10 @@
   .page-header__wrap {
     width: 192px;
 
-    border: none;
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .page-header__logo {
@@ -103,12 +146,15 @@
   .page-header__nav-item {
     margin-left: 36px;
 
-    border: none;
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .page-header__nav-link {
     padding-top: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 7px;
 
     font-weight: 400;
     font-size: 18px;
@@ -126,11 +172,6 @@
     &[href]:active {
       opacity: 0.3;
     }
-  }
-
-  .index .page-header__nav-link {
-    color: $color-main;
-    border-color: $color-main;
   }
 }
 
@@ -207,11 +248,16 @@
   .page-header__nav-link {
     padding: 0;
     padding-top: 19px;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
 
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
     color: $color-secondary-font;
+  }
+
+  .index .page-header__nav-link {
+    color: $color-main;
+    border-color: $color-main;
   }
 }

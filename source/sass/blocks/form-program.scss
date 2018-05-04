@@ -213,26 +213,28 @@
 .form-program__wrap-title {
   position: relative;
 
+  display: inline-flex;
+  max-width: 181px;
   margin: 0;
   margin-top: 6px;
   margin-bottom: 34px;
-  padding-right: 24px;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $color-secondary-font;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     top: 14px;
-    left: 100%;
+    left: calc(100% + 22px);
 
-    width: 100%;
+    display: inline-flex;
+    width: 100vw;
     height: 3px;
 
-    background-color: $color-interactive;
+    background-color: #68b738;
   }
 }
 
@@ -463,6 +465,7 @@
   }
 
   .form-program__wrap-title {
+    max-width: 100%;
     margin: 0;
     margin-bottom: 75px;
 
@@ -470,12 +473,21 @@
     line-height: 36px;
 
     &::before {
-      top: 14px;
-      left: 100%;
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: calc(100% + 40px);
 
-      display: none;
-      width: 100%;
+      display: inline-flex;
+      width: 100vw;
       height: 3px;
+
+      background-color: #68b738;
+    }
+
+    &::after {
+      top: 22px;
+      left: calc(100% + 40px);
     }
   }
 
@@ -528,27 +540,27 @@
 
   .form-program__container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .form-program__wrap {
-    padding: 0;
-    margin-bottom: 50px;
     width: 570px;
+    margin-bottom: 50px;
+    padding: 0;
 
     &--nb {
+      width: 100%;
       margin-bottom: 46px;
       padding: 0;
-      width: 100%;
     }
 
     &--radio {
       margin-right: 0;
+      margin-bottom: 69px;
       padding-top: 24px;
       padding-bottom: 10px;
       padding-left: 28px;
-      margin-bottom: 69px;
     }
 
     &--checkbox {
@@ -571,8 +583,8 @@
   }
 
   .form-program__input-wrap {
-    margin: 0;
     width: 570px;
+    margin: 0;
 
     &--checkbox {
       width: 245px;
@@ -696,12 +708,11 @@
     line-height: 36px;
 
     &::before {
-      top: 14px;
-      left: 100%;
+      top: 23px;
+    }
 
-      display: none;
-      width: 100%;
-      height: 3px;
+    &::after {
+      top: 23px;
     }
   }
 

@@ -121,6 +121,8 @@
 }
 
 .result__diff-range-label {
+  position: relative;
+
   display: block;
   width: 84px;
   height: 14px;
@@ -129,6 +131,26 @@
   background-color: $color-main;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+
+    width: 35px;
+    height: 6px;
+
+    background-color: $color-interactive;
+    border-radius: 3px;
+  }
+
+  &--before::before {
+    left: 4px;
+  }
+
+  &--after::before {
+    right: 4px;
+  }
 }
 
 .result__diff-range-descr {
