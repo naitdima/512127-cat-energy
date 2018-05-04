@@ -1,5 +1,4 @@
 .goods-more {
-  margin-bottom: 39px;
   padding-top: 28px;
 }
 
@@ -31,7 +30,7 @@
 @media (min-width: $tablet-width) {
   .goods-more {
     padding-top: 67px;
-    padding-bottom: 69px;
+    padding-bottom: 0;
     margin: 0;
   }
 

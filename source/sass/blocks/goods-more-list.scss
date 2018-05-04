@@ -1,9 +1,11 @@
 .goods-more-list {
   border-top: 1px solid #cdcdcd;
+  padding-bottom: 39px;
 }
 
 @media (min-width: $tablet-width) {
   .goods-more-list {
     border: none;
+    padding-bottom: 69px;
   }
 }
