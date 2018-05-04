@@ -228,6 +228,32 @@
     padding-top: 362px;
 
     background: linear-gradient(to right, $color-secondary 50%, #eaeaea 50%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 100vw;
+      height: 100%;
+
+      background-color: #eaeaea;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+      width: 100vw;
+      height: 100%;
+
+      background-color: $color-secondary;
+    }
   }
 
   .result__diff-img {
@@ -394,32 +420,6 @@
     padding-top: 363px;
 
     background: linear-gradient(to right, $color-secondary 50%, #eaeaea 50%);
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-
-      width: 100vw;
-      height: 100%;
-
-      background-color: $color-secondary;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-
-      width: 100vw;
-      height: 100%;
-
-      background-color: #eaeaea;
-    }
   }
 
   .result__diff-wrap {
