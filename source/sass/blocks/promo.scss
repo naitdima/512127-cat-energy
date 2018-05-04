@@ -34,14 +34,16 @@
 }
 
 .promo__img-wrap {
-  position: relative;
-
   padding-top: 135px;
+}
+
+.promo__img-container {
+  position: relative;
 }
 
 .promo__img {
   position: absolute;
-  top: -139px;
+  top: -273px;
   left: 50%;
 
   transform: translate(-50%);
@@ -138,6 +140,7 @@
 
   .promo__img {
     top: -315px;
-    left: 561px;
+    left: auto;
+    right: 335px;
   }
 }

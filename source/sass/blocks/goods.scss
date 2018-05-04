@@ -27,3 +27,20 @@
     margin-bottom: 23px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .goods {
+    padding-top: 72px;
+    padding-bottom: 17px;
+  }
+
+  .goods__header {
+    padding: 0;
+  }
+
+  .goods__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 21px;
+  }
+}

@@ -56,7 +56,6 @@
     width: 155px;
 
     font-size: 16px;
-    line-height: 20px;
     text-align: right;
   }
 
@@ -78,26 +77,19 @@
   }
 
   .contacts__wrap {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 570px;
-    padding: 0;
     padding-top: 64px;
     padding-bottom: 54px;
   }
 
   .contacts__title {
     width: 246px;
-    margin: 0;
-    padding: 0;
     padding-left: 76px;
   }
 
   .contacts__adress {
     width: 245px;
-    margin: 0;
-    padding: 0;
     padding-right: 85px;
 
     text-align: left;
