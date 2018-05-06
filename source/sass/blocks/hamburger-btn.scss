@@ -4,6 +4,7 @@
 
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: transparent;
   border: none;
 
   &--show {
@@ -16,7 +17,8 @@
   }
 
   &--close {
-    top: 19px;
+    top: 23px;
+    right: 3px;
 
     width: 18px;
     height: 18px;
