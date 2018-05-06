@@ -76,6 +76,14 @@
   }
 }
 
+.form-program__input:focus + .form-program__input-icon path {
+  fill: #68b738;
+}
+
+.form-program__input:invalid + .form-program__input-icon path {
+  fill: #ff8282;
+}
+
 .form-program__label {
   position: relative;
 
