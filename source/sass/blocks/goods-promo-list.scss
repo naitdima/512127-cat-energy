@@ -1,3 +1,16 @@
 .goods-promo-list {
   margin-bottom: 35px;
 }
+
+@media (min-width: $tablet-width) {
+  .goods-promo-list {
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-promo-list {
+    margin: 0;
+    width: 245px;
+  }
+}

@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 8px;
+  padding-top: 5px;
 
   background-color: $color-secondary;
 }
@@ -7,15 +7,20 @@
 .page-footer__logo-wrap {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 34px;
+  padding-bottom: 28px;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.page-footer__logo {
-  width: 128px;
-  height: 24px;
+.page-footer__logo-link {
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social-wrap {
@@ -26,7 +31,7 @@
 }
 
 .page-footer__copyright {
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 20px;
 }
 
@@ -36,6 +41,15 @@
   justify-content: space-between;
 
   color: $color-main-font;
+
+  &:hover .page-footer__copyright-link-icon-content,
+  &:active .page-footer__copyright-link-icon-content {
+    fill: $color-interactive;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copyright-descr {
@@ -43,13 +57,64 @@
   margin: 0;
   padding-top: 9px;
   padding-bottom: 9px;
+  margin-left: -1px;
 
   font-size: 16px;
   line-height: 16px;
   font-family: $font-secondary;
 }
 
-.page-footer__copyright-logo {
+.page-footer__copyright-link-icon {
+  margin-top: 1px;
   width: 27px;
   height: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding: 0;
+    padding-top: 44px;
+    padding-bottom: 47px;
+  }
+
+  .page-footer__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo-wrap {
+    display: flex;
+    justify-content: flex-start;
+    width: 162px;
+    padding: 0;
+    padding-top: 21px;
+
+    border: none;
+  }
+
+  .page-footer__social-wrap {
+    width: 324px;
+    padding-right: 18px;
+
+    border: none;
+  }
+
+  .page-footer__copyright {
+    width: 162px;
+    padding: 0;
+  }
+
+  .page-footer__copyright-descr {
+    width: auto;
+    padding: 0;
+    padding-top: 23px;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .page-footer__copyright-link-icon {
+    margin-top: 15px;
+  }
 }
