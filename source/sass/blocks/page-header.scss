@@ -56,6 +56,14 @@
   display: none;
 }
 
+.page-header__nav {
+  display: none;
+
+  &--show {
+    display: block;
+  }
+}
+
 .page-header__nav-list {
   @include list-reset;
 }
@@ -142,6 +150,7 @@
   .page-header__nav {
     width: 516px;
     padding-top: 2px;
+    display: block;
   }
 
   .page-header__nav-list {

@@ -6,15 +6,12 @@
   background-size: cover;
   background-color: transparent;
   border: none;
+  top: 23px;
 
-  &--show {
-    top: 23px;
+  width: 24px;
+  height: 18px;
 
-    width: 24px;
-    height: 18px;
-
-    background-image: url("../img/icon-mobile-menu.svg");
-  }
+  background-image: url("../img/icon-mobile-menu.svg");
 
   &--close {
     top: 23px;
