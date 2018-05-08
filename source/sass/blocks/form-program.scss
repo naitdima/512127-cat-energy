@@ -45,7 +45,7 @@
   position: relative;
 
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 13px;
 }
 
@@ -172,7 +172,9 @@
 
   flex-grow: 1;
   height: 45px;
+  padding-top: 13px;
   padding-right: 16px;
+  padding-bottom: 14px;
   padding-left: 15px;
 
   font-weight: 400;
@@ -461,6 +463,8 @@
   .form-program__input {
     height: 52px;
     margin-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     padding-left: 18px;
 
     font-size: 20px;
@@ -691,20 +695,6 @@
       height: 16px;
 
       background-image: url("../img/icon-tick.svg");
-    }
-  }
-
-  .form-program__input {
-    height: 52px;
-    margin-bottom: 20px;
-    padding-left: 18px;
-
-    font-size: 20px;
-    line-height: 20px;
-
-    &::placeholder {
-      font-size: 20px;
-      line-height: 20px;
     }
   }
 
