@@ -8,6 +8,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
+var htmlmin = require('gulp-htmlmin');
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -44,6 +45,7 @@ gulp.task("html", function () {
   .pipe(posthtml([
     include()
   ]))
+  .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("build"));
 });
 
