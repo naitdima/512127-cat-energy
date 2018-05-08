@@ -9,6 +9,7 @@ var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -47,6 +48,12 @@ gulp.task("html", function () {
   ]))
   .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("build"));
+});
+
+gulp.task("compress", function () {
+    return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("images", function () {
@@ -95,6 +102,7 @@ gulp.task("build", function (done) {
     "style",
     "sprite",
     "html",
+    "compress",
     done
   );
 });
