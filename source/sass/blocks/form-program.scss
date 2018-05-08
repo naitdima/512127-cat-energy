@@ -76,11 +76,11 @@
   }
 }
 
-.form-program__input:focus + .form-program__input-icon path {
+.form-program__input:focus + .form-program__input-icon use {
   fill: #68b738;
 }
 
-.form-program__input:invalid + .form-program__input-icon path {
+.form-program__input:invalid + .form-program__input-icon use {
   fill: #ff8282;
 }
 
