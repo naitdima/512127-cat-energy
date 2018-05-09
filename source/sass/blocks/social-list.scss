@@ -1,6 +1,7 @@
 .social-list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 140px;
   padding-top: 17px;

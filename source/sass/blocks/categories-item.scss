@@ -2,9 +2,9 @@
   position: relative;
 
   margin-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   background-color: $color-secondary;
 
@@ -81,6 +81,7 @@
 .categories-item__link {
   display: block;
   padding-top: 19px;
+  padding-right: 60px;
   padding-bottom: 22px;
 
   font-size: 16px;
@@ -107,10 +108,12 @@
 .categories-item__link-descr {
   position: relative;
 
+  display: inline-flex;
+
   &::before {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 3px;
     right: -35px;
 
     width: 24px;
@@ -159,6 +162,7 @@
   }
 
   .categories-item__title {
+    width: 380px;
     margin-bottom: 25px;
     padding: 0;
 
@@ -191,8 +195,10 @@
   }
 
   .categories-item__link-descr {
+    max-width: 380px;
+
     &::before {
-      top: 10px;
+      top: 5px;
       right: -46px;
     }
   }
@@ -204,8 +210,8 @@
     margin: 0;
     padding-top: 76px;
     padding-right: 50px;
-    padding-left: 52px;
     padding-bottom: 62px;
+    padding-left: 52px;
 
     &::before {
       top: 47px;
@@ -233,8 +239,8 @@
   }
 
   .categories-item__title {
-    padding-left: 162px;
     margin-bottom: 74px;
+    padding-left: 162px;
   }
 
   .categories-item__descr {
@@ -248,7 +254,7 @@
 
   .categories-item__link-descr {
     &::before {
-      top: 9px;
+      top: 4px;
       right: -48px;
     }
   }

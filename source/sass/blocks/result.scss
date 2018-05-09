@@ -60,7 +60,8 @@
 
 .result__item-category {
   position: absolute;
-  top: 46px;
+  top: calc(100% - 8px);
+  z-index: 1;
 
   width: 87px;
   margin: 0;
@@ -187,6 +188,7 @@
   }
 
   .result__title {
+    width: 610px;
     margin-bottom: 64px;
 
     font-size: 60px;
@@ -295,22 +297,22 @@
   }
 
   .result__diff-img-container {
-    width: 708px;
     display: flex;
+    width: 708px;
     margin-top: -530px;
     margin-bottom: 10px;
   }
 
   .result__diff-img-wrap {
     display: block;
-    overflow: hidden;
     width: 354px;
+    overflow: hidden;
   }
 
   .result__diff-img {
+    position: relative;
     top: auto;
     left: auto;
-    position: relative;
   }
 
   .result__diff-img-wrap--before .result__diff-img {
@@ -503,9 +505,9 @@
   }
 
   .result__diff-img {
+    position: relative;
     top: auto;
     left: auto;
-    position: relative;
   }
 
   .result__diff-img-wrap--before .result__diff-img {
