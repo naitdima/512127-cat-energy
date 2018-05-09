@@ -1,6 +1,6 @@
 .result {
   padding-top: 17px;
-  padding-bottom: 36px;
+  padding-bottom: 33px;
 
   background-color: $color-secondary;
 }
@@ -133,8 +133,7 @@
 .result__diff-range-wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 202px;
+  justify-content: center;
   padding-left: 5px;
 }
 
@@ -171,13 +170,22 @@
   }
 }
 
-.result__diff-range-descr {
-  margin: 0;
-
+.result__diff-range-btn {
   font-size: 16px;
   line-height: 20px;
   color: $color-secondary-font;
   text-transform: uppercase;
+
+  background: none;
+  border: none;
+
+  &--before {
+    margin-right: 10px;
+  }
+
+  &--after {
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -393,27 +401,23 @@
     }
   }
 
-  .result__diff-range-descr {
-    width: 132px;
+  .result__diff-range-btn {
+    padding: 0;
     padding-top: 5px;
     padding-bottom: 5px;
 
     font-size: 20px;
 
     &--before {
-      padding-right: 16px;
-
-      text-align: right;
+      padding-right: 5px;
     }
 
     &--after {
-      padding-left: 12px;
-
-      text-align: left;
+      padding-left: 5px;
     }
   }
 
-  .result__diff-range-descr span {
+  .result__diff-range-btn span {
     border-bottom: 1px dotted $color-secondary-font;
   }
 }
@@ -536,24 +540,20 @@
     margin: 0;
   }
 
-  .result__diff-range-descr {
-    width: 70px;
+  .result__diff-range-btn {
     padding-top: 5px;
     padding-bottom: 5px;
 
-    font-size: 20px;
-    line-height: 20px;
-
     &--before {
-      text-align: left;
+      padding-right: 10px;
     }
 
     &--after {
-      text-align: right;
+      padding-left: 10px;
     }
   }
 
-  .result__diff-range-descr span {
+  .result__diff-range-btn span {
     border-bottom: 1px dotted $color-secondary-font;
   }
 }
