@@ -7,6 +7,8 @@
     <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
     <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.js"></script>
+    <script src="js/svgxuse.js"></script>
   </head>
   <body class="form">
     <div style="display:none">
@@ -65,15 +67,15 @@
             </div>
 
             <div class="form-program__wrap  form-program__wrap--radio">
-              <div class="form-program__input-wrap">
+              <div class="form-program__input-wrap  form-program__input-wrap--radio">
                 <input class="visually-hidden  form-program__input" id="slim" type="radio" name="program" value="slim" checked>
                 <label class="form-program__label  form-program__label--radio" for="slim">Похудение</label>
               </div>
-              <div class="form-program__input-wrap">
+              <div class="form-program__input-wrap  form-program__input-wrap--radio">
                 <input class="visually-hidden  form-program__input" id="pro" type="radio" name="program" value="pro">
                 <label class="form-program__label  form-program__label--radio" for="pro">Набор массы</label>
               </div>
-              <div class="form-program__input-wrap">
+              <div class="form-program__input-wrap  form-program__input-wrap--radio">
                 <input class="visually-hidden  form-program__input" id="unknown" type="radio" name="program" value="unknown">
                 <label class="form-program__label  form-program__label--radio" for="unknown">Не знаю (Нужен ваш совет)</label>
               </div>
@@ -195,8 +197,6 @@
         </section>
       </div>
     </footer>
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/svgxuse.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
