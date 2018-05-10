@@ -5,12 +5,12 @@
   width: 30px;
   height: 30px;
 
-  &:hover .social-item__link-icon-content,
-  &:active .social-item__link-icon-content {
+  &:hover use,
+  &:active use {
     fill: $color-interactive;
   }
 
-  &:active .social-item__link-icon-content {
+  &:active use {
     opacity: 0.3;
   }
 }

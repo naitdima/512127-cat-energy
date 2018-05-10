@@ -42,8 +42,8 @@
 
   color: $color-main-font;
 
-  &:hover .page-footer__copyright-link-icon-content,
-  &:active .page-footer__copyright-link-icon-content {
+  &:hover use,
+  &:active use {
     fill: $color-interactive;
   }
 
