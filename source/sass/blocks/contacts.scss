@@ -136,6 +136,11 @@
     padding: 0;
 
     background-color: $color-main;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .contacts__wrap {
