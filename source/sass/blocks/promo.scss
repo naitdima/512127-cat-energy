@@ -46,6 +46,9 @@
   top: -273px;
   left: 50%;
 
+  width: 280px;
+  height: 271px;
+
   transform: translate(-50%);
 }
 
@@ -98,6 +101,9 @@
     left: -88px;
     z-index: -1;
 
+    width: 709px;
+    height: 609px;
+
     transform: none;
   }
 
@@ -142,5 +148,8 @@
     top: -315px;
     right: 335px;
     left: auto;
+
+    width: 552px;
+    height: 499px;
   }
 }
