@@ -1,5 +1,6 @@
 .contacts {
   position: relative;
+
   padding-top: 28px;
   padding-bottom: 26px;
 
@@ -130,6 +131,7 @@
     position: absolute;
     top: 96px;
     left: 40px;
+    z-index: 2;
 
     padding: 0;
 
