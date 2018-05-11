@@ -257,6 +257,11 @@
   }
 }
 
+.form-program__input:focus + .form-program__label--checkbox,
+.form-program__input:focus + .form-program__label--radio {
+  outline: auto 2px Highlight;
+}
+
 .form-program__wrap-title {
   position: relative;
 
